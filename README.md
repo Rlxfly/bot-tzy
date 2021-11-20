@@ -30,6 +30,7 @@ apt install imagemagick -y
 git clone https://github.com/Rlxfly/bot-tzy
 cd bot-tzy
 bash install.sh
+npm i cfonts
 npm install
 npm update
 ```
