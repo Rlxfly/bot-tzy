@@ -2,6 +2,10 @@
 
 Simple WhatsApp Bot
 
+<p align="center">
+  <a href="https://github.com/Rlxfly"><img src="http://readme-typing-svg.herokuapp.com?color=AFFQ0Y0&center=true&vCenter=true&multiline=false&lines=Simple+Whatsapp+Bot;Base+ori+by+Nurutomo;Don't+bully+me+>//<" alt="UwU">
+</p>
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rlxfly/bot-tzy)
 # Join kalo eror/ga paham
 * [`Join sini`](https://chat.whatsapp.com/KuXafKWskPeGKruacIp8YT) 
@@ -59,3 +63,6 @@ node .
 
 
 ---------
+  
+  
+  # Thanks if you use this source code >//<
