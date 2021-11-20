@@ -1,0 +1,44 @@
+let { sticker } = require('../lib/sticker')
+let handler = async (m, { itsu, text }) => {
+let nick = itsu.contacts[m.sender].notify
+let gc = itsu.getName(m.chat)
+let uploadFile = require('../lib/uploadFile')
+
+let uploadImage = require('../lib/uploadImage')
+let { webp2png } = require('../lib/webp2mp4')
+	let stiker = false
+	try {
+		if (!m.quoted) return m.reply('Reply stikernya')
+		await m.reply('Loading...')
+		let [packname, ...author] = text.split`|`
+		author = (author || []).join`|`
+		let q = m.quoted ? m.quoted : m
+		let mime = m.quoted.mimetype || ''
+		if (/webp/.test(mime)) {
+			let img = await q.download()
+			let out = await webp2png(img)
+			if (!img) return m.reply(`Reply stiker dengan perintah ${usedPrefix + command} <packname>|<author>`)
+			stiker = await sticker(0, out, nick || '', gc || '')
+		} else if (/image/.test(mime)) {
+			let img = await q.download()
+			let link = await uploadImage(img)
+			if (!img) return m.reply(`Reply gambar dengan perintah ${usedPrefix + command} <packname>|<author>`)
+			stiker = await sticker(0, link, packname || '', author || '')
+		} else if (/video/.test(mime)) {
+			if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
+			let img = await q.download()
+			let link = await uploadFile(img)
+			if (!img) return m.reply(`Reply video dengan perintah ${usedPrefix + command} <packname>|<author>`)
+			stiker = await sticker(0, link, packname || '', author || '')
+		}
+	} finally {
+		if (stiker) await itsu.sendMessage(m.chat, stiker, 'stickerMessage', { quoted: m })
+		//else return m.reply('Reply stikernya!')
+	}
+}
+
+handler.help = ['wm']
+handler.tags = ['sticker']
+handler.command = /^wm$/i
+
+module.exports = handler
