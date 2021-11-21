@@ -4,26 +4,27 @@ const { promisify } = require('util')
 const { join } = require('path')
 
 let confirmation = {}
-let repository = 'LitRHap/wabot'
+let repository = 'Rlxfly/bot-tzy'
 let branch = 'master'
 
-async function handler(m, { text }) {
-    let res = await fetch()
+async function handler(m, { text, args }) {
+  if (!args || !args[0]) throw `lah`
+    let res = await fetch(`https://raw.githubusercontent.com/${repository}/${branch}/${text}`)
     if (!res.ok) throw await res.text()
-    let filename = join(__dirname, text)
+    let filename = join(__dirname, '..', text)
     if (existsSync(filename)) {
         confirmation[m.sender] = {
             res,
             filename,
             text,
-            timeout: setTimeout(() => (m.reply('timed out'), delete confirmation[m.sender]), 60000)
+            timeout: setTimeout(() => (m.reply('timed out'),delete confirmation[m.sender]), 60000)
         }
         throw 'File exists, are you sure want to overwrite? (Y/n) (60s Timeout)'
     }
     res.body.pipe(createWriteStream(filename))
     res.body.once('end', () => {
         m.reply('Done update!')
-        conn.sendFile(m.chat, filename, text, null, m).catch(console.error)
+        itsu.sendFile(m.chat, filename, text, null, m).catch(console.error)
     })
 }
 
@@ -34,7 +35,7 @@ handler.all = async m => {
         res.body.pipe(createWriteStream(filename))
         res.body.once('end', () => {
             m.reply('Done overwrite!')
-            conn.sendFile(m.chat, filename, text, null, m).catch(console.error)
+            itsu.sendFile(m.chat, filename, text, null, m).catch(console.error)
         })
         clearTimeout(timeout)
         delete confirmation[m.sender]
