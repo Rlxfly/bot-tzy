@@ -1,9 +1,15 @@
+<p align="center">
+    <img src="https://github.com/Rlxfly" width="54%" height="50%" alt="Relldev"/>
+    <br>
+    <a href="https://github.com/Rlxfly"><img title="Created by" src="https://img.shields.io/badge/Creator-Relldev-black?style=for-the-badge&logo=windows"></a>
+</p>
+
 # RECODE WABOT-AQ
 
 Simple WhatsApp Bot
 
 <p align="center">
-  <a href="https://github.com/Rlxfly"><img src="http://readme-typing-svg.herokuapp.com?color=AFFQ0Y0&center=true&vCenter=true&multiline=false&lines=Simple+Whatsapp+Bot;Base+ori+by+Nurutomo;Don't+bully+me+>//<" alt="UwU">
+  <a href="https://github.com/Rlxfly"><img src="http://readme-typing-svg.herokuapp.com?color=AFFQ0Y0&center=true&vCenter=true&multiline=false&lines=Simple+Whatsapp+Bot;Base+ori+by+Nurutomo;Give+star+and+forks+this+repo+:)" alt="UwU">
 </p>
 
 ### Preview bot
@@ -19,6 +25,12 @@ Simple WhatsApp Bot
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rlxfly/bot-tzy)
 # Join kalo eror/ga paham
 * [`Join sini`](https://chat.whatsapp.com/KuXafKWskPeGKruacIp8YT) 
+
+------------
+## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px"> Installation
+
+
+
 ## FOR TERMUX/UBUNTU/SSH USER
 
 ```bash
