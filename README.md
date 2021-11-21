@@ -9,7 +9,7 @@
 Simple WhatsApp Bot
 
 <p align="center">
-  <a href="https://github.com/Rlxfly"><img src="http://readme-typing-svg.herokuapp.com?color=AFFQ0Y0&center=true&vCenter=true&multiline=false&lines=Simple+Whatsapp+Bot;Base+ori+by+Nurutomo;Give+star+and+forks+this+repo+:)" alt="UwU">
+  <a href="https://github.com/Rlxfly"><img src="http://readme-typing-svg.herokuapp.com?color=7FFF00&center=true&vCenter=true&multiline=false&lines=Simple+Whatsapp+Bot;Base+ori+by+Nurutomo;Give+star+and+forks+this+repo+:)" alt="UwU">
 </p>
 
 ### Preview bot
