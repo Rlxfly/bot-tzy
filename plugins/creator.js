@@ -2,7 +2,6 @@ let handler = function (m) {
   const { MessageType} = require("@adiwajshing/baileys")
 const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 let fs = require('fs')
-let peli = fs.readFileSync('./Nice.jpeg')
 let name = this.contacts[m.sender].notify
 let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
   // this.sendContact(m.chat, '6281515860089', 'Nurutomo', m)
