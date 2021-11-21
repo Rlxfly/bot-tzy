@@ -8,6 +8,7 @@ let handler  = async (m, { itsu, usedPrefix: _p }) => {
   let fs = require('fs')
   let eror = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? eror : m.sender
+  let pp = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
   try {
     pp = await itsu.getProfilePicture(who)
   } catch (e) {
