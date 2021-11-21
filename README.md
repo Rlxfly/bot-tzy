@@ -26,6 +26,9 @@ Simple WhatsApp Bot
 # Join kalo eror/ga paham
 * [`✅`](https://chat.whatsapp.com/I4S4QfCet92GueJV5Uq3jT) 
 
+# Group for user
+* [`✅`](https://chat.whatsapp.com/C8IxlLkUsIz27X1CTOsz8Q) 
+
 ------------
 ## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px"> Installation
 
