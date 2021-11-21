@@ -1,7 +1,7 @@
 <p align="center">
-    <img src="https://github.com/Rlxfly" width="54%" height="50%" alt="Relldev"/>
+    <img src="https://telegra.ph/file/301cb7a85fa49eb24b99d.jpg" width="100%" height="50%" alt="Relldev"/>
     <br>
-    <a href="https://github.com/Rlxfly"><img title="Created by" src="https://img.shields.io/badge/Creator-Relldev-black?style=for-the-badge&logo=windows"></a>
+    <a href="https://github.com/Rlxfly"><img title="Created by" src="https://img.shields.io/badge/Creator-Relldev-green?style=for-the-badge&logo=github"></a>
 </p>
 
 # RECODE WABOT-AQ
