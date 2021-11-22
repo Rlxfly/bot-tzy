@@ -33,8 +33,30 @@ Simple WhatsApp Bot
 ## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px"> Installation
 
 
+## FOR TERMUX USER
 
-## FOR TERMUX/UBUNTU/SSH USER
+```bash
+1. termux-change-repo
+- Pilih ok
+- Pilih A1batross
+- Pilih ok lagi
+2. apt-get update
+3. apt upgrade
+4. apt update && apt upgrade
+5. apt install git -y
+6. apt install nodejs -y
+7. apt install ffmpeg -y
+8. apt install imagemagick -y
+9. git clone https://github.com/Rlxfly/bot-tzy
+10. cd bot-tzy
+11. bash install.sh
+12. npm i cfonts
+13. npm install
+14. npm update
+15. npm start
+```
+
+## FOR UBUNTU/SSH USER
 
 ```bash
 apt update && apt upgrade
