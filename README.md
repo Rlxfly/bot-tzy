@@ -31,8 +31,12 @@ Simple WhatsApp Bot
 
 ------------
 ## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px"> Installation
-
-
+--------
+## NOTE: 
+```bash
+Need 2 hp untuk scan qr code
+```
+------------
 ## FOR TERMUX USER
 
 ```bash
