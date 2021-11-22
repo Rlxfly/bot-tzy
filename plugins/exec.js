@@ -5,8 +5,8 @@ let handler  = async (m, _2) => {
 let fs = require('fs')
 
 
-let peli = fs.readFileSync('./anu.webp')
-let ye = fs.readFileSync('./anj.webp')
+let peli = thumb3
+let ye = thumb
   let _return
   let _syntax = ''
   let _text = (/^=/.test(usedPrefix) ? 'return ' : '') + noPrefix
