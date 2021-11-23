@@ -2,6 +2,7 @@ let fetch = require('node-fetch')
 
 let handler = async (m, { itsu, args }) => {
   if (!args[0]) throw 'Uhm...url nya mana?'
+  m.reply('Loading...')
   let res = await fetch(API('Velgrynd', '/api/tiktok2', { url: args[0] }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
