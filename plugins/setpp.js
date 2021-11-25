@@ -11,5 +11,4 @@ handler.help = ['ppbot', 'botpp'].map(v => 'set' + v)
 handler.command = /^set(ppbot|botpp)$/i
 handler.owner = true
 
-
-//Bug
+module.exports = handler
