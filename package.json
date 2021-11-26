@@ -1,6 +1,6 @@
 {
   "name": "BotTzy",
-  "version": "4.0.4",
+  "version": "1.05",
   "description": "Edited bot WhatsApp",
   "depecrated": false,
   "main": "index.js",
@@ -19,16 +19,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "homepage": "https://github.com/Rlxfly/bot-tzy",
   "author": {
     "name": "Rlxfly"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/Rlxfly/bot-tzy.git"
   },
   "bugs": {
-    "url": "https://github.com/Nurutomo/wabot-aq/issues"
+    "url": "https://github.com/Rlxfly/bot-tzy/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
@@ -58,7 +58,6 @@
     "node-webpmux": "^2.0.3",
     "qrcode": "^1.3.3",
     "qrcode-terminal": "^0.12.0",
-    "rss-parser": "^3.12.0",
     "sagiri": "^3.1.1",
     "similarity": "^1.2.1",
     "socket.io": "^4.0.1",
