@@ -14,7 +14,12 @@ let handler  = async (m, { itsu, usedPrefix: _p }) => {
   } catch (e) {
 
   }
-  let ppBot = await itsu.getProfilePicture(itsu.user.jid)
+  let ppBot = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
+  try {
+    ppBot = await itsu.getProfilePicture(who)
+  } catch (e) {
+
+  }
   let yts = require('yt-search')
 let fetch = require('node-fetch')
 let tag = `@${m.sender.split('@')[0]} 🐦`
