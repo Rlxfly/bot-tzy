@@ -9,7 +9,7 @@ let handler  = async (m, { itsu, usedPrefix: _p }) => {
 const { MessageType} = require("@adiwajshing/baileys")
 const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 let fs = require ('fs')
-const peli = fs.readFileSync('./kokomi.jpeg')
+const peli = thumb3
 itsu.sendMessage(m.chat, '- _*About me*_\n\n- Owner : Rell\n- Age: 15/ 9th grade class\n - Github: Rlxfly\n\n thx.' , text, {quoted: m, thumbnail: fs.readFileSync('./sarkas.webp'), contextInfo:{externalAdReply: {title: itsu.user.name , body: '>///<',sourceUrl: 'https://chat.whatsapp.com/J3j8XFLPnOR0RI937C8Biu', thumbnailUrl: pp}}})
 }
 
