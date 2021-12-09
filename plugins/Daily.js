@@ -5,10 +5,9 @@ let handler  = async (m, { itsu, usedPrefix, DevMode}) => {
     let _timers = (86400000 - __timers)
     let timers = clockString(_timers) 
     if (new Date - user.lastclaim > 86400000) {
-        itsu.reply(m.chat, `Anda sudah mengklaim dan mendapatkan 5000 💵money 15 diamond dan 5 potion`, m)
-        global.DATABASE._data.users[m.sender].money += 5000
-        global.DATABASE._data.users[m.sender].potion += 5
-        global.DATABASE._data.users[m.sender].diamond += 15
+        itsu.reply(m.chat, `Anda sudah mengklaim dan mendapatkan 10 limit`, m)
+        global.DATABASE._data.users[m.sender].limit += 10
+        
         global.DATABASE._data.users[m.sender].lastclaim = new Date * 1
     } else {
         let buttons = button(`silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, user)
@@ -16,7 +15,7 @@ let handler  = async (m, { itsu, usedPrefix, DevMode}) => {
     }
 }
 handler.help = ['daily']
-handler.tags = ['rpg']
+handler.tags = ['main']
 handler.command = /^(daily)$/i
 handler.owner = false
 handler.mods = false
