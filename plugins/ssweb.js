@@ -3,7 +3,7 @@ let handler = async (m, { itsu, command, args }) => {
   if (!args[0]) return m.reply('Tidak ada url')
   await m.reply('Loading...')
   let url = /https?:\/\//.test(args[0]) ? args[0] : 'https://' + args[0]
-  let ss = 'http://hadi-api.herokuapp.com/api/ssweb?url=' + url + '&device=desktop&full=' + full
+  let ss = 'http://hadi-api.herokuapp.com/api/ssweb2?url=' + url + '&device=desktop&full=' + full
   itsu.sendFile(m.chat, ss, 'screenshot.png', url, m, {thumbnail: thumb3})
 }
 
