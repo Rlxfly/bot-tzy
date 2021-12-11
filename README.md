@@ -23,8 +23,7 @@ Simple WhatsApp Bot
 ------------------
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rlxfly/bot-tzy)
-# Join kalo eror/ga paham
-* [`✅`](https://chat.whatsapp.com/I4S4QfCet92GueJV5Uq3jT) 
+ 
 
 # Group for user
 * [`✅`](https://chat.whatsapp.com/C8IxlLkUsIz27X1CTOsz8Q) 
