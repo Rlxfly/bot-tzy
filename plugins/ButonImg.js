@@ -14,12 +14,7 @@ let handler  = async (m, { itsu, usedPrefix: _p }) => {
   } catch (e) {
 
   }
-  let ppBot = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
-  try {
-    ppBot = await itsu.getProfilePicture(who)
-  } catch (e) {
-
-  }
+  let ppBot = await itsu.getProfilePicture(itsu.user.jid)
   let yts = require('yt-search')
 let fetch = require('node-fetch')
 let tag = `@${m.sender.split('@')[0]} 🐦`
@@ -126,7 +121,11 @@ const anu = {
                           }
                         }
                       }
+   const emo =['🎋', '🎫', '🛠️', '⚙️', '📊', '🔖', '✅', '🌀', '💬']
                       
+   var moe = emo[Math.floor(Math.random() * (emo.length))]
+   
+
                       let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let { exp, limit, level } = global.DATABASE.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
@@ -195,6 +194,7 @@ const anu = {
         limit: plugin.limit
       }
     })
+      var moes = moe[Math.floor(Math.random() * (moe.length))]
     let groups = {}
     for (let tag in tags) {
       groups[tag] = []
@@ -214,7 +214,7 @@ const anu = {
 - Creator : ${ow}
 - Partner : ${pat1}\n${pat2}\n${pat3}
 %readmore`
-    let header = itsu.menu.header || '➜  『  %category  』'
+    let header = itsu.menu.header || ` ${moe} ┉┄┈┈┈ 『  %category  』 ┉┄┈┈┈ ` 
     let body   = itsu.menu.body   || '➠ %cmd%islimit'
     let footer = itsu.menu.footer || `›`.repeat(50) + '\n'
     let after  = itsu.menu.after  ||   (itsu.user.jid == global.itsu.user.jid ? '' : `Powered by https://wa.me/${global.itsu.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\`` 
