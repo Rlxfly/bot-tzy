@@ -6,8 +6,8 @@ let handler = async (m, { itsu, args }) => {
   let res = await fetch(API('Velgrynd', '/api/tiktok2', { url: args[0] }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
-  let url = json.video_original
-  itsu.sendFile(m.chat, url, 'tiktok.mp4', '', m)
+  let url = json.result.video_url
+  await itsu.sendFile(m.chat, url, 'tiktok.mp4', '', m)
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
