@@ -10,7 +10,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `Runtime\n${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S`
+  return `\n\t\t*「 \t ${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S \t」*\n`
 }
 					runtime = process.uptime()
 					teks = `${kyun(runtime)}`
@@ -26,7 +26,21 @@ function kyun(seconds){
 								}
 							}
 					}
-						itsu.sendMessage(m.chat, '```Runtime```' , 'conversation', {quoted: m, thumbnail: thumb3, contextInfo:{externalAdReply: {title: 'Rell >///<', body: `${teks}`, sourceUrl: '', thumbnail: thumb3}}})
+						    
+						     prep = itsu.prepareMessageFromContent(m.chat, { orderMessage: { 
+itemCount: -10112006, status: 500,
+surface: 999,
+message: teks,
+description: 'pler',
+orderTitle: 'awikwok',
+token: '9',
+curreyCode: 'IDR',
+totalCurrencyCode: '>〰<',
+totalAmount1000: '1000000',
+sellerJid: '6283820073017@s.whatsapp.net',
+thumbnail: global.thumb3
+}}, {contextInfo: null, quoted: m})
+itsu.relayWAMessage(prep)
 				/*	itsu.sendMessage(m.chat, `${teks}`, MessageType.text, rtimebro)*/
 }
 
