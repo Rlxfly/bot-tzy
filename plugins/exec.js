@@ -32,14 +32,10 @@ let ye = thumb
     _return = e
   } finally {
     /*itsu.reply(m.chat, _syntax + util.format(_return), m)*/
-    prep = itsu.prepareMessageFromContent(m.chat, { orderMessage: { 
-itemCount: 999999999999, status: 1,
-message: _syntax + util.format(_return),
-orderTitle: 'B',
-sellerJid: '62838200730170@s.whatsapp.net',
-thumbnail: global.thumb
-}}, {contextInfo: null, quoted: m})
-itsu.relayWAMessage(prep)
+let arr = []
+for (let i = 0; i < 404; i++) arr.push({ productId: '4072560079514110' }) 
+let list = await itsu.prepareMessageFromContent(m.chat, { listMessage: { title: 'ꜱɪᴍᴩʟᴇ ᴡʜᴀᴛꜱᴀᴩᴩ ʙᴏᴛ',  description: _syntax + util.format(_return) , listType: 2, productListInfo: { productSections: [{ title: 'github: Rlxfly', products: arr }], headerImage: { productId: '4072560079514110', jpegThumbnail: thumb3 }, businessOwnerJid: '6283820073017@s.whatsapp.net' }, footerText: `© ${itsu.getName('6283820073017@s.whatsapp.net')}` }}, { quoted: m })
+itsu.relayWAMessage(list, { waitForAck: true })
     m.exp = old
   }
 }
